@@ -1,0 +1,30 @@
+import { AffairsEntity } from "./affairs.entity";
+import { ContractsEntity } from "./contracts.entity";
+import { DocumentsEntity } from "./documents.entity";
+import { ClientsEntity } from "./clients.entity";
+export declare class DatabaseEntity {
+    id: number;
+    name: string;
+    trademark: string;
+    territory: string;
+    nonProtectedElements: string;
+    client: ClientsEntity;
+    numberOrder: string;
+    dateOrder: Date;
+    numberRegistration: string;
+    dateRegistration: Date;
+    datePublication: Date;
+    priorityNumber: string;
+    priorityDate1: Date;
+    priorityDate2: Date;
+    niceClasses: string;
+    validityStart: Date;
+    validityEnd: Date;
+    extensionStart: Date;
+    extensionEnd: Date;
+    affairs: AffairsEntity[];
+    contracts: ContractsEntity[];
+    documents: DocumentsEntity[];
+    created_at: Date;
+    updated_at: Date;
+}
